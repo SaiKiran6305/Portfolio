@@ -1,712 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<title>SaiKiran Dasari Portfolio </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<link rel="stylesheet" href="css/aos.css">
-
-	<link rel="stylesheet" href="css/ionicons.min.css">
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-
-
-
-	<style>
-		/*======================================
-//--//-->   ABOUT
-======================================*/
-
-		.about-mf .box-shadow-full {
-			padding-top: 4rem;
-			padding-bottom: 4rem;
-		}
-
-		.about-mf .about-img {
-			margin-bottom: 2rem;
-		}
-
-		.about-mf .about-img img {
-			margin-left: 10px;
-		}
-
-
-		.skill-mf .progress {
-			/* background-color: #cde1f8; */
-			margin: .5rem 0 1.2rem 0;
-			border-radius: 0;
-			height: .7rem;
-		}
-
-		.skill-mf .progress .progress-bar {
-			height: .7rem;
-			background-color: #ffbd39;
-		}
-
-
-		/* Animation styles */
-		#typing-animation {
-			position: relative;
-			font-size: 30px;
-			font-weight: bold;
-			color: rgb(255, 255, 255);
-			overflow: hidden;
-			white-space: nowrap;
-			animation: typing 3s steps(20, end) infinite;
-		}
-
-		#typing-animation:before {
-			content: "";
-			/* position: absolute; */
-			top: 0;
-			left: 0;
-			width: 0;
-			height: 100%;
-			background-color: #ccc;
-			animation: typing-cursor 0.5s ease-in-out infinite;
-		}
-
-		@keyframes typing {
-			from {
-				width: 0;
-			}
-
-			to {
-				width: 100%;
-			}
-		}
-
-		@keyframes typing-cursor {
-			from {
-				width: 5px;
-			}
-
-			to {
-				width: 0;
-			}
-		}
-
-
-		/* project image zoom effect */
-
-		.zoom-effect {
-			overflow: hidden;
-			transition: transform 0.3s ease-out;
-		}
-
-		.zoom-effect:hover {
-			transform: scale(1.1);
-		}
-	</style>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbfdfd">
+  <title>Sai Kiran Dasari — Software Engineer</title>
+  <meta name="description" content="Portfolio of Sai Kiran Dasari, a software engineer building backend systems, full-stack applications and practical AI tools.">
+  <meta property="og:title" content="Sai Kiran Dasari — Software Engineer">
+  <meta property="og:description" content="Backend, Full-Stack & AI engineering experience at ISN, Oracle and Amdocs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="wordmark" href="#home" aria-label="Sai Kiran Dasari home">Sai Kiran<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">SaiKiran Dasari</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/Myself.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex  align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>SaiKiran Dasari</span></h1>
-
-								<!-- Element to contain animated typing -->
-								<span id="typing-animation"></span>
-
-								<script>
-
-									// Initialize the typing animation
-									const typingAnimationElement = document.getElementById('typing-animation');
-
-									// Create an array of typing text
-									const typingTexts = [
-										'Software Engineer  ',
-
-									];
-
-									// Create a function to display the typing animation for a given text
-									function playTypingAnimation(text) {
-										// Loop through each character and add it to the element
-										for (let i = 0; i < text.length; i++) {
-											setTimeout(() => {
-												typingAnimationElement.textContent += text[i];
-											}, i * 200); // Increase the delay to slow down the typing animation
-										}
-
-										// Once the animation is complete, reset the text and start over
-										setTimeout(() => {
-											typingAnimationElement.textContent = '';
-											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-										}, text.length * 200);
-									}
-
-									// Start the typing animation loop
-									playTypingAnimation(typingTexts[0]);
-
-								</script>
-
-								<br>
-								<br>
-
-								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-								<!-- <br> -->
-								<p>
-									<a href="https://github.com/SaiKiran6305"
-										class="btn btn-white btn-outline-white py-3 px-4">Github Profile</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/bg_3.png" class="img-fluid rounded b-shadow-a" alt="">
-										</div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p><span class="title-s">Name: </span> <span>SaiKiran Dasari</span></p>
-											<p><span class="title-s">Job Role: </span> <span>Software Developer</span>
-											</p>
-											<p><span class="title-s">Experience: </span> <span>3 Years </span></p>
-											<!--<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p> -->
-										</div>
-									</div>
-								</div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Java</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>PYTHON</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%"
-											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>AWS Devops</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>React</span> <span class="pull-right">55%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<span>Javascript</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-
-									<span>SQL</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-
-								<p>
-									With over 3 years of professional experience in software development, I specialize
-									in building scalable backend systems and modern enterprise-grade web applications.
-									I have strong expertise in Java, Spring Boot, RESTful APIs, and microservices
-									architecture.
-									At Oracle, I contributed to modernizing enterprise UI using Oracle VBCS and Redwood
-									design, while also integrating complex backend logic with robust filtering
-									mechanisms and API orchestration.
-									My prior experience at Amdocs involved working on telecom platforms, focusing on
-									performance optimization, system reliability, and service modularization.
-									I’m proficient in cloud technologies like AWS, Docker, and Kubernetes, and skilled
-									in using Git, SQL, and tools like JIRA for agile delivery and Software Development Life Cycle(SDLC).
-									Currently pursuing a Master’s in Computer Science at the University of North Texas,
-									I’m passionate about solving real-world problems through efficient and clean
-									software engineering practices.
-								</p>
-
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Education:</span> <span>Master of Science</span></li>
-									<li class="d-flex"><span>Major:</span> <span>Computer Science</span></li>
-									<li class="d-flex"><span>University:</span> <span>University of North Texas</span>
-									</li>
-									<li class="d-flex"><span>Language:</span> <span>English</span></li>
-									<li class="d-flex"><span>Core Skills:</span>
-										<span>Java, Spring Boot, REST APIs, Microservices, Oracle VBCS, SQL, Git</span>
-									</li>
-									<li class="d-flex"><span>Other Tools:</span>
-										<span>Docker, Kubernetes, AWS, JIRA, Postman, Maven, IntelliJ</span>
-									</li>
-									<li class="d-flex"><span>Interest:</span> <span>System Design, Software Development, Coding,
-										,Technology	</span></li>
-								</ul>
-							</div>
-						</div>
-
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<!--<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>-->
-							<p><a href="https://www.linkedin.com/in/dasari-sai-kiran/"
-									class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
-
-
-
-
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>
-						Seasoned Software Engineer with 3+ years of experience optimizing system performance and
-						developing scalable, cloud-ready applications.
-						Proven expertise in computer science, distributed systems, data structures & algorithms, and
-						software development.
-						Proficient in Java, C++, SQL, and Spring Boot, with strong experience in microservices
-						architecture, REST API development, and containerization using Docker and Kubernetes.
-						Skilled in using Git for version control and Oracle VBCS for modern UI development.
-						Hands-on experience with cloud platforms like AWS and building CI/CD-friendly backend services.
-					</p>
-				</div>
-			</div>
-
-
-			<div class="row">
-				<h1 class="big-4">Experience</h1>
-				<div class="underline"></div>
-			</div>
-			<br>
-
-			<div class="row">
-
-				<!-- Oracle Experience -->
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">Oct 2024 – Aug 2025</span>
-						<h2>Application Engineer</h2>
-						<span class="position">Oracle, Hyderabad</span>
-						<p class="mt-4">
-							Key contributor to the modernization of Oracle's Functional Setup Manager (FSM), focusing on
-							scalable micro frontends and UI performance improvements.
-						<ul>
-							<li>Developed 15+ interactive UIs using Oracle VBCS, Knockout.js, and Redwood design system.
-							</li>
-							<li>Optimized RESTful API integration and eliminated redundant calls, improving performance
-								by 60%.</li>
-							<li>Built recursive, multi-criteria filtering logic to enhance faceted search in FSM
-								modules.</li>
-							<li>Led migration from monolithic architecture to micro frontends, improving modularity and
-								maintainability.</li>
-							<li>Collaborated cross-functionally in Agile sprints, contributing to continuous delivery
-								and test automation.</li>
-
-						</ul>
-						</p>
-					</div>
-				</div>
-
-				<!-- Amdocs Experience -->
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">Jul 2022 – Oct 2024</span>
-						<h2>Software Developer</h2>
-						<span class="position">Amdocs, Pune</span>
-						<p class="mt-4">
-							Core contributor to the NextG – IPAAS and AT&T Port-in/Port-out systems, with a focus on
-							backend microservices and legacy integration.
-						<ul>
-							<li>Developed microservices in Spring Boot to convert Digital One product orders into UPC
-								requests for the Order Management System.</li>
-							<li>Handled port-in/out processes for AT&T mobile customers, ensuring high availability and
-								data accuracy across legacy systems.</li>
-							<li>Optimized system fallouts by implementing robust error-handling workflows using Camunda
-								and OpenShift.</li>
-							<li>Improved software performance by 10% through advanced data structure optimization and
-								query tuning.</li>
-
-						</ul>
-						</p>
-					</div>
-				</div>
-
-
-			</div>
-
-			<br>
-			<br>
-
-			<div class="row">
-				<h1 class="big-4">Education</h1>
-				<div class="underline"></div>
-			</div>
-			<br>
-
-			<div class="row">
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">2025-2026</span>
-						<h2>Master's of Science</h2>
-						<span class="position">University of North Texas</span>
-						<p class="mt-4">Computer Science.</p>
-						<p class="mt-4">CGPA: 4.0/4.0.</p>
-					</div>
-				</div>
-
-				<div class="col-md-6 d-flex">
-					<div class="resume-wrap ftco-animate w-100">
-						<span class="date">2018-2022</span>
-						<h2>Bachelor of Engineering</h2>
-						<span class="position">National Institute Of Technology, Warangal (NITW)</span>
-						<p class="mt-4">Computer Science And Engineering</p>
-						<p class="mt-4">CGPA: 3.5/4.0.</p>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p><a href="files/Sai Kiran Dasari_Resume.pdf" class="btn btn-primary py-4 px-5" download>Download
-							Resume</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-	<!--  <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+  <main id="main">
+    <section class="hero page-shell" id="home">
+      <div class="hero-grid">
+        <div class="identity-panel">
+          <div class="portrait-wrap">
+            <img src="assets/portrait.webp" alt="Sai Kiran Dasari in a suit on a tree-lined university walkway" width="1100" height="1100" fetchpriority="high">
+          </div>
+          <div class="identity-copy">
+            <p class="kicker">HELLO, I’M</p>
+            <h1>Sai Kiran<br>Dasari</h1>
+            <p class="role">Software Engineer · Denton, TX</p>
+            <p class="status">M.S. Computer Science · University of North Texas (UNT)</p>
+          </div>
+          <div class="social-row" aria-label="Professional profiles">
+            <a href="mailto:saikiran.dasari76599@gmail.com" aria-label="Email Sai Kiran">Email ↗</a>
+            <a href="https://www.linkedin.com/in/dasari-sai-kiran" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/SaiKiran6305" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
-              </div>
-            </div>
+        <div class="hero-message">
+          <p class="kicker">BACKEND · FULL-STACK · AI</p>
+          <h2>Engineering reliable systems.<br><span>Building practical AI.</span></h2>
+          <p>I build Java and Spring Boot services, React and Oracle JET interfaces, and grounded LLM systems. Across Oracle, Amdocs and ISN, my work has reduced latency, automated failure recovery and simplified complex enterprise workflows.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#experience">View experience <span>→</span></a>
+            <a class="button secondary" href="Sai-Kiran-Dasari-Resume.pdf" download>Download Resume <span>↓</span></a>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
-              </div>
-            </div>
-          </div>
+          <div class="open-to"><span></span>Open to internships, full-time & early-career roles</div>
         </div>
-	<br>
-		
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
-				</div>
-			  </div>
-			</div>
-		 </div>
-	  </div>
-    </section> 
+      </div>
+    </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
+    <section class="impact page-shell" aria-label="Career highlights">
+      <div class="impact-intro"><span>IMPACT AT A GLANCE</span><p>Measured outcomes across enterprise software and applied AI systems.</p></div>
+      <article><strong>60%</strong><span>faster page responses</span></article>
+      <article><strong>15+</strong><span>interfaces & task flows</span></article>
+      <article><strong>3–5 days</strong><span>reduced to minutes</span></article>
+      <article><strong>LLM + RAG</strong><span>grounded AI assistants</span></article>
+      <article><strong>Vector DB</strong><span>semantic & hybrid retrieval</span></article>
+      <article><strong>3+</strong><span>years in software engineering</span></article>
+    </section>
+
+    <section class="section page-shell about" id="about">
+      <div class="section-title reveal">
+        <p class="section-index">01 / ABOUT</p>
+        <h2>Engineering with context.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">I’m a software engineer who enjoys understanding the full path from a user’s problem to the service, data model, interface, and deployment behind the solution.</p>
+          <p>At Oracle, I improved Fusion Cloud performance and built a RAG copilot over setup documentation and task metadata. At Amdocs, I developed order-processing services and automated failure recovery. At ISN, I owned a self-service data-resolution workflow and built an LLM-based bug-resolution agent. Across those roles, I worked with Java, Spring Boot, .NET, React, Oracle JET, SQL, LLMs, RAG pipelines and vector databases.</p>
+          <p>At the University of North Texas (UNT), I also guide capstone teams on architecture, APIs, backend implementation and engineering tradeoffs.</p>
+          <div class="personal-note">Beyond code: cricket, badminton, movies and exploring new places.</div>
         </div>
-      </div> -->
+        <div class="education-stack reveal">
+          <article>
+            <span class="date">2025 — 2027</span>
+            <p class="school">University of North Texas (UNT)</p>
+            <h3>M.S. Computer Science</h3>
+            <div><span>Expected May 2027</span><strong>4.0 / 4.0</strong></div>
+          </article>
+          <article>
+            <span class="date">2018 — 2022</span>
+            <p class="school">NIT Warangal</p>
+            <h3>B.Tech. Computer Science</h3>
+            <div><span>Warangal, India</span><strong>3.8 / 4.0</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-	<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-		<!-- <div class="container"> -->
-		<div class="row justify-content-center">
-			<div class="col-md-7 ftco-animate text-center">
-				<h2>More projects on<span> Github </span> </h2>
-				<div class="heading">
-					<h4> Passionate about solving business challenges and uncovering insights through data-driven
-						solutions </h4>
-					<br>
-					<p><a href="https://github.com/SaiKiran6305" class="btn btn-primary py-3 px-5">GitHub</a></p>
-				</div>
-			</div>
-		</div>
-		<!-- </div> -->
-	</div>
-	</section>
+    <section class="section projects-section" id="projects">
+      <div class="page-shell">
+        <div class="section-title reveal">
+          <p class="section-index">03 / SELECTED WORK</p>
+          <div class="heading-row"><h2>Built to solve real problems.</h2><a href="https://github.com/SaiKiran6305" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div>
+        </div>
 
+        <article class="featured-project reveal">
+          <div class="project-copy">
+            <div class="project-labels"><span>FEATURED PROJECT</span><span>MULTIMODAL SEARCH</span></div>
+            <h3>Multimodal Product<br>Intelligence Platform</h3>
+            <p>Converts image and text queries into ranked product matches, structured attributes and seller-ready content through a complete retrieval and generation workflow.</p>
+            <ul>
+              <li>Combined CLIP embeddings and FAISS with BM25 and Reciprocal Rank Fusion.</li>
+              <li>Added category-aware reranking to improve relevance across product types.</li>
+              <li>Built FastAPI services and a React interface for the end-to-end experience.</li>
+            </ul>
+            <div class="chip-row"><span>FastAPI</span><span>React</span><span>CLIP</span><span>FAISS</span><span>YOLOv8</span><span>Gemini</span></div>
+          </div>
+          <div class="result-card">
+            <p>RETRIEVAL QUALITY</p>
+            <div class="result-main"><strong>0.72</strong><span>Precision@5</span></div>
+            <div class="comparison"><span>Baseline</span><b>0.61</b></div>
+            <div class="track"><i style="width:61%"></i></div>
+            <div class="comparison"><span>Hybrid + reranking</span><b>0.72</b></div>
+            <div class="track accent"><i style="width:72%"></i></div>
+            <div class="result-secondary"><strong>0.81</strong><span>Mean reciprocal rank</span></div>
+            <div class="pipeline"><span>Image / text</span><i>→</i><span>Retrieve</span><i>→</i><span>Rerank</span></div>
+          </div>
+        </article>
 
+        <article class="rag-project reveal">
+          <div class="rag-visual" aria-label="Enterprise RAG processing architecture">
+            <p>ENTERPRISE RAG PIPELINE</p>
+            <div class="rag-flow">
+              <div class="flow-node"><span>01</span><div><small>INGEST</small><strong>Secure PDF upload</strong></div></div>
+              <div class="flow-node"><span>02</span><div><small>PROCESS</small><strong>Extract, chunk & embed</strong></div></div>
+              <div class="flow-node"><span>03</span><div><small>RETRIEVE</small><strong>pgvector + hybrid search</strong></div></div>
+              <div class="flow-node"><span>04</span><div><small>GENERATE</small><strong>Grounded answer + citations</strong></div></div>
+            </div>
+            <div class="rag-quality">
+              <div><strong>30–50</strong><span>evaluation questions</span></div>
+              <div><strong>6</strong><span>quality metrics</span></div>
+              <div><strong>RBAC</strong><span>retrieval-time security</span></div>
+            </div>
+          </div>
+          <div class="project-copy rag-copy">
+            <div class="project-labels"><span>COMPLETED · END TO END</span><span>FULL-STACK AI</span></div>
+            <h3>Enterprise RAG<br>Knowledge Platform</h3>
+            <p>Built a production-oriented document intelligence platform that transforms enterprise PDFs into searchable knowledge and returns evidence-grounded answers with validated page-level citations.</p>
+            <ul>
+              <li>Implemented secure document upload, PyMuPDF extraction, token-aware chunking, embeddings and PostgreSQL/pgvector storage.</li>
+              <li>Built semantic and hybrid retrieval with metadata filters, query rewriting and reranking, followed by LLM answer generation with citation validation and safe refusal behavior.</li>
+              <li>Delivered FastAPI services and a React experience for document management, conversational follow-ups, citation inspection and processing status.</li>
+              <li>Applied JWT authentication, workspaces, role-based access control during retrieval, background processing, Redis caching, rate limiting and structured observability.</li>
+              <li>Created a repeatable RAG evaluation suite covering Recall@K, Precision@K, citation accuracy, faithfulness, relevance and refusal accuracy.</li>
+            </ul>
+            <div class="chip-row"><span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>pgvector</span><span>OpenAI</span><span>Redis</span><span>Docker</span></div>
+          </div>
+        </article>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<p>Below are the details to reach out to me!</p>
-				</div>
-			</div>
+      </div>
+    </section>
 
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>Texas, USA</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Contact Number</h3>
-						<p><a href="tel://+1 9407580716">+1 9407580716</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:saikiran.dasari.tech@gmail.com">saikiran.dasari.tech@gmail.com</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<h3 class="mb-4">Download Resume</h3>
-						<p><a href="files/Sai Kiran Dasari_Software Engineer.pdf">resumelink</a></p>
-					</div>
-				</div>
+    <section class="section page-shell experience" id="experience">
+      <div class="section-title reveal">
+        <p class="section-index">02 / EXPERIENCE</p>
+        <h2>Enterprise work with measurable impact.</h2>
+      </div>
+      <div class="timeline">
+        <article class="experience-card reveal">
+          <div class="company"><div class="company-brand"><div class="company-logo isn-logo"><img src="assets/logo-isn.png" alt="ISN logo" width="92" height="84"></div><div><span>ISN</span><small>JUN — AUG 2026 · DALLAS, TEXAS, UNITED STATES</small></div></div></div>
+          <div class="experience-body">
+            <h3>Software Developer Intern</h3>
+            <ul class="experience-points">
+              <li>Owned the end-to-end development of a self-service platform using React, Razor and ASP.NET Core REST APIs, enabling business users to resolve data mismatches without developer assistance and reducing turnaround from 3–5 days to minutes for a process used approximately 600 times annually.</li>
+              <li>Developed the platform across an API gateway, service and SQL Server data layers, defining request and response contracts and supporting the complete workflow from the user interface to database updates.</li>
+              <li>Unified data access across two databases using Entity Framework Core, Dapper, optimized SQL and stored procedures.</li>
+              <li>Resolved two authorization issues through per-action permission checks that addressed privilege-escalation and permission-bypass paths.</li>
+              <li>Built an LLM-based bug-resolution agent that analyzed logs and stack traces, used RAG to retrieve relevant code and previously resolved issues from a vector knowledge store, and generated proposed patches and regression tests as pull requests for developer review.</li>
+            </ul>
+            <div class="chip-row"><span>React</span><span>Razor</span><span>ASP.NET Core</span><span>REST APIs</span><span>SQL Server</span><span>LLMs</span><span>RAG</span><span>Vector search</span></div>
+          </div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="company"><div class="company-brand"><div class="company-logo wordmark-logo"><img src="assets/logo-oracle.svg" alt="Oracle logo" width="231" height="30"></div><div><span>Oracle</span><small>OCT 2024 — AUG 2025 · HYDERABAD, INDIA</small></div></div></div>
+          <div class="experience-body">
+            <h3>Software Engineer</h3>
+            <ul class="experience-points">
+              <li>Improved page response times by approximately 60% and reduced query execution time by approximately 40% by optimizing SQL, applying service-level caching and eliminating redundant API calls in Oracle Fusion Cloud.</li>
+              <li>Built 15+ interfaces and task flows with faceted search, responsive components and analytics views using Oracle JET, Knockout.js, JavaScript and REST APIs, improving usability across configuration workflows.</li>
+              <li>Engineered an AI-powered copilot for Oracle Fusion Functional Setup Manager using LLMs and RAG, helping implementation consultants identify relevant setup tasks, understand dependencies and troubleshoot configuration issues through context-aware, citation-backed responses.</li>
+              <li>Built a knowledge-ingestion pipeline for product documentation, release notes and FSM task metadata; generated embeddings and indexed them in a vector database for semantic, metadata-filtered and hybrid retrieval.</li>
+              <li>Integrated the RAG workflow with Spring Boot REST services and the Oracle JET micro-frontend, combining retrieved knowledge with real-time configuration context while enforcing role-based access, prompt guardrails, response validation and audit logging.</li>
+            </ul>
+            <div class="chip-row"><span>Java</span><span>Spring Boot</span><span>Oracle JET</span><span>Knockout.js</span><span>REST APIs</span><span>SQL</span><span>LLMs</span><span>RAG</span><span>Embeddings</span><span>Vector database</span><span>Hybrid search</span></div>
+          </div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="company"><div class="company-brand"><div class="company-logo wide-logo"><img src="assets/logo-amdocs.png" alt="Amdocs logo" width="1531" height="409"></div><div><span>Amdocs</span><small>JUL 2022 — OCT 2024 · PUNE, INDIA</small></div></div></div>
+          <div class="experience-body">
+            <h3>Software Developer</h3>
+            <ul class="experience-points">
+              <li>Developed Java and Spring Boot middleware integrating Digital One with Order Management systems, transforming product-order payloads into UPC requests and persisting transaction and status data in PostgreSQL, improving order-processing efficiency by approximately 35%.</li>
+              <li>Designed REST APIs supporting order submission, status tracking, failure recovery and reliable communication across upstream and downstream services.</li>
+              <li>Implemented automated retry, fallout-tracking and ticket-creation workflows for failed orders, reducing manual intervention by approximately 30% and support response time by approximately 40%.</li>
+              <li>Built a React and Spring Boot fallout-management application that displayed failures across connected services, allowing support teams to identify the failed processing stage, review error details and retry eligible orders.</li>
+            </ul>
+            <div class="chip-row"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>PostgreSQL</span><span>React</span><span>Microservices</span></div>
+          </div>
+        </article>
+        <article class="experience-card reveal">
+          <div class="company"><div class="company-brand"><div class="company-logo unt-logo"><img src="assets/logo-unt.png" alt="University of North Texas logo" width="330" height="132"></div><div><span>University of North Texas (UNT)</span><small>JAN 2026 — PRESENT · TEXAS, UNITED STATES</small></div></div></div>
+          <div class="experience-body">
+            <h3>Teaching / Instructional Assistant</h3>
+            <ul class="experience-points">
+              <li>Guide four capstone teams on system architecture, API design, backend implementation, Agile planning and technical risk management.</li>
+              <li>Evaluate algorithms and software implementations for correctness, complexity, code quality and alignment with project requirements.</li>
+            </ul>
+            <div class="chip-row"><span>Mentorship</span><span>System design</span><span>Algorithms</span><span>Technical reviews</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-				<div class="container">
-					<br>
-					<br>
-					<div class="row justify-content-center">
-						<div class="col-md-7 ftco-animate text-center">
-							<h2>Have a<span> Question? </span> <a href="https://forms.gle/s7KV6kD71DPVdmQa7"
-									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-						</div>
-					</div>
-					<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-						<li class="ftco-animate normal-txt">Find me on </li>
+    <section class="section skills-section" id="skills">
+      <div class="page-shell">
+        <div class="section-title reveal"><p class="section-index">04 / TOOLKIT</p><h2>Technology with a purpose.</h2></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-number">01</span><span class="skill-label">CORE</span></div><h3>Backend engineering</h3><p>Services, API contracts and reliable distributed workflows.</p><div class="tool-cloud"><span>Java</span><span>Python</span><span>C#</span><span>Spring Boot</span><span>ASP.NET Core</span><span>FastAPI</span><span>REST APIs</span><span>Microservices</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-number">02</span><span class="skill-label">PRODUCT</span></div><h3>Interfaces & data</h3><p>Responsive product experiences backed by well-designed data access.</p><div class="tool-cloud"><span>React</span><span>Oracle JET</span><span>Knockout.js</span><span>Razor</span><span>JavaScript</span><span>PostgreSQL</span><span>SQL Server</span><span>pgvector</span></div></article>
+          <article class="skill-card accent-card reveal"><div class="skill-card-top"><span class="skill-number">03</span><span class="skill-label">AI</span></div><h3>LLMs & retrieval</h3><p>Grounded AI systems designed for relevant, traceable answers.</p><div class="tool-cloud"><span>LLMs</span><span>RAG</span><span>Embeddings</span><span>Vector DB</span><span>Hybrid search</span><span>FAISS</span><span>BM25</span><span>Reranking</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-number">04</span><span class="skill-label">DELIVERY</span></div><h3>Cloud & reliability</h3><p>Repeatable delivery, observability and production operations.</p><div class="tool-cloud"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>OpenShift</span><span>Jenkins</span><span>CI/CD</span><span>Grafana</span><span>Prometheus</span></div></article>
+        </div>
+        <div class="certifications reveal"><span>CERTIFIED</span><p>Microsoft Azure AI Fundamentals <b>AI-900</b></p><p>AWS Certified Developer <b>Associate</b></p></div>
+      </div>
+    </section>
 
-						<li class="ftco-animate"><a href="https://www.linkedin.com/in/dasari-sai-kiran/"><span
-									class="icon-linkedin"></span></a></li>
+    <section class="contact page-shell" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <p class="section-index">05 / CONTACT</p>
+          <h2>Have a role or problem<br>worth solving?</h2>
+          <p>I’m exploring internships, full-time and early-career opportunities across backend, full-stack and AI engineering.</p>
+          <a class="contact-email" href="mailto:saikiran.dasari76599@gmail.com">saikiran.dasari76599@gmail.com <span>↗</span></a>
+          <div class="contact-links"><a href="https://www.linkedin.com/in/dasari-sai-kiran" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/SaiKiran6305" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="Sai-Kiran-Dasari-Resume.pdf" download>Resume ↓</a></div>
+        </div>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/saikiran.dasari76599@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio inquiry">
+          <input type="hidden" name="_template" value="table">
+          <input class="form-trap" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row"><label for="contact-name">Name</label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+          <div class="form-row"><label for="contact-email-input">Email</label><input id="contact-email-input" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="form-row"><label for="contact-subject">Subject</label><input id="contact-subject" name="subject" type="text" placeholder="Role, project or question" required></div>
+          <div class="form-row"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="4" placeholder="Tell me a little about your inquiry" required></textarea></div>
+          <button class="form-submit" type="submit"><span class="submit-label">Send message</span><span>→</span></button>
+          <p class="form-note" id="form-note" aria-live="polite">Your message will be sent directly to my inbox.</p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-						<li class="ftco-animate"><a href="https://www.instagram.com/dsk_765/"><span
-									class="icon-instagram"></span></a></li>
-					</ul>
-					<br>
-				</div>
-			</div>
-	</section>
-
-
-
-
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
-
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-
-	<script src="js/main.js"></script>
-
+  <footer class="page-shell"><span>© <span id="year">2026</span> Sai Kiran Dasari</span><a href="#home">Back to top ↑</a></footer>
 </body>
-
 </html>
