@@ -323,6 +323,42 @@
             </div>
           </div>
         </article>
+
+        <article class="rag-project reveal">
+          <div class="rag-visual" aria-label="Simulated benchmark results for the Local SLM Assistant">
+            <p>SIMULATED BENCHMARK · 1B PROFILE · 12 TASKS</p>
+            <div class="comparison"><span>Valid JSON, raw model output</span><b>8%</b></div>
+            <div class="track"><i style="width:8.3%"></i></div>
+            <div class="comparison"><span>Valid JSON after the repair ladder</span><b>100%</b></div>
+            <div class="track accent"><i style="width:100%"></i></div>
+            <div class="comparison"><span>Field values correct, unchanged by repair</span><b>93%</b></div>
+            <div class="track"><i style="width:93.1%"></i></div>
+            <div class="evidence">
+              <p>REPAIR LADDER</p>
+              <ol class="ladder">
+                <li><b>L0</b><span>parse the output as-is</span></li>
+                <li><b>L1</b><span>salvage syntax, never invent values</span></li>
+                <li><b>L2</b><span>re-prompt with the validation error</span></li>
+                <li><b>L3</b><span>regenerate under a schema grammar</span></li>
+                <li><b>L4</b><span>abstain instead of guessing</span></li>
+              </ol>
+            </div>
+            <p class="sim-note">Simulated model profiles, not real inference. Real-model runs with Ollama are next.</p>
+          </div>
+          <div class="project-copy rag-copy">
+            <div class="project-labels"><span>PERSONAL PROJECT · SEP 2026</span><span>LOCAL LLMS</span></div>
+            <h3>Local SLM Assistant</h3>
+            <p>Small local models often know the answer but fail to return valid JSON. This project measures those two failures separately and closes the gap with engineering, not a bigger model.</p>
+            <p class="project-impact"><strong>Impact</strong> Shows where effort pays off for on-device models: fix the output layer first, and escalate to a larger model only when the repair process shows it’s needed.</p>
+            <ul>
+              <li>Five-rung repair ladder that records which rung each answer needed; the salvage step fixes syntax only and never fills in missing values.</li>
+              <li>GBNF grammars generated from Pydantic schemas, so missing keys, extra keys and invented enum values can’t be emitted.</li>
+              <li>Benchmark keeps conformance (valid, schema-matching JSON) separate from accuracy (correct values), so repair is never mistaken for a smarter model.</li>
+            </ul>
+            <div class="chip-row"><span>Python</span><span>FastAPI</span><span>Pydantic</span><span>GBNF</span><span>Ollama</span><span>pytest</span><span>Docker</span></div>
+            <div class="project-links"><a href="https://github.com/SaiKiran6305/local-slm-assistant" target="_blank" rel="noopener noreferrer" aria-label="View Local SLM Assistant on GitHub">Source code ↗</a></div>
+          </div>
+        </article>
       </div>
     </section>
 
