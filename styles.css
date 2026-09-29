@@ -79,7 +79,6 @@ h1,h2,h3{text-wrap:balance}
 .project-links{display:flex;flex-wrap:wrap;gap:10px}
 .project-links a.link-primary{background:linear-gradient(135deg,#04aa9e,var(--teal-dark));border-color:transparent;color:#fff}
 .project-links a.link-primary:hover,.project-links a.link-primary:focus-visible{background:var(--teal-dark);border-color:transparent}
-.demo-note{margin:10px 0 0;font-size:13px;color:#51666e}
 
 /* Project visuals: centered, no dead navy space, and real evidence instead of labels */
 .rag-visual{display:flex;flex-direction:column;justify-content:center}
