@@ -65,3 +65,20 @@ contactForm?.addEventListener('submit', async event => {
     submitLabel.textContent = 'Send message';
   }
 });
+
+// Mobile menu: a disclosure button that opens the full navigation.
+const header = document.querySelector('.site-header');
+const menuToggle = document.querySelector('.menu-toggle');
+function setMenu(open) {
+  header.classList.toggle('nav-open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+}
+menuToggle?.addEventListener('click', () => setMenu(menuToggle.getAttribute('aria-expanded') !== 'true'));
+navLinks.forEach(link => link.addEventListener('click', () => setMenu(false)));
+addEventListener('keydown', event => {
+  if (event.key === 'Escape' && header.classList.contains('nav-open')) { setMenu(false); menuToggle.focus(); }
+});
+addEventListener('click', event => {
+  if (header.classList.contains('nav-open') && !header.contains(event.target)) setMenu(false);
+});
+matchMedia('(min-width: 761px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
