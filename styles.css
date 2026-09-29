@@ -30,3 +30,12 @@ nav{color:#3f555f}.nav-cta{border-color:#aad2cc;box-shadow:0 5px 16px rgba(16,61
 .contact-card{background:linear-gradient(145deg,#103d47,#0d4b53);box-shadow:0 25px 70px rgba(16,61,71,.18)}.contact-form{border-color:rgba(142,225,216,.38);background:rgba(255,255,255,.07)}.form-row label{color:#d1e5e3}.form-row input,.form-row textarea{border-color:#517981;background:#123b44}.form-submit{background:linear-gradient(135deg,#8ce9df,#5bd1c5)}.form-submit:disabled{cursor:wait;opacity:.72;transform:none}.form-note{color:#afc9c7}.form-note.success{color:#8ff0d6}.form-note.error{color:#ffd2cb}.form-trap{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important}
 @media(max-width:760px){nav a:nth-child(2){display:block}nav a:nth-child(1),nav a:nth-child(4){display:none}}
 @media(max-width:500px){nav a:nth-child(2){display:none}}
+
+/* Project outcomes and source links */
+.project-impact{margin:20px 0;padding:14px 18px;border-left:3px solid var(--teal);background:#eef8f6;border-radius:0 8px 8px 0;color:#23434b!important}
+.project-impact strong{display:block;margin-bottom:4px;color:#14796f;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.project-links{margin-top:22px}
+.project-links a{display:inline-flex;align-items:center;min-height:42px;padding:9px 15px;border:1px solid #a8d6ce;border-radius:8px;background:#f2fbf8;color:#14665e;font-weight:700;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.project-links a:hover,.project-links a:focus-visible{background:#ddf5ee;border-color:#6bb8a9;transform:translateY(-2px)}
+.bug-project{grid-template-columns:1.18fr .82fr}
+@media(max-width:760px){.bug-project{grid-template-columns:1fr}.bug-project .rag-visual{order:-1}}
