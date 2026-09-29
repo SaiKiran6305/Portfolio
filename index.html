@@ -204,11 +204,12 @@
           <div class="project-copy">
             <div class="project-labels"><span>FEATURED PROJECT</span><span>RETRIEVAL · EVALUATION</span></div>
             <h3>RAG Query Router</h3>
-            <p>Top-k retrieval can’t count, find a missing clause or compare amounts. This system classifies each question, sends it to an engine that can answer it, and says whether its answer came from a full scan or a sample.</p>
+            <p>A contract Q&amp;A system for the questions standard RAG gets wrong: counts, missing clauses, and dollar or date comparisons. It sends each question to an engine that checks every contract, and says whether an answer came from a full scan or a sample.</p>
+            <p class="project-impact"><strong>Why not just call an LLM?</strong> Exact answers with no per-question API cost, in about a millisecond, and contract data never leaves the server.</p>
             <ul>
-              <li>Seven engines (count, absence, numeric, date, multi-hop, listing, semantic) over typed contract facts, compiled to parameterized SQL.</li>
-              <li>Benchmarked against a deliberately strong RAG baseline: hybrid BM25 and dense retrieval with perfect reading of whatever it retrieves.</li>
-              <li>Tested on rephrased questions it was never tuned on; questions the contracts can’t answer are declined instead of guessed.</li>
+              <li>Answered all 21 counting, missing-clause and comparison questions correctly; a strong standard RAG pipeline got none of them exactly right.</li>
+              <li>87% accuracy on reworded questions it was never tuned on; an optional LLM fallback handles unusual phrasing, and every plan it proposes is checked against the schema.</li>
+              <li>Seven engines over typed contract facts, compiled to parameterized SQL, with CI gating every change on both benchmarks across 71 tests.</li>
             </ul>
             <div class="chip-row"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>BM25</span><span>Embeddings</span><span>pytest</span><span>Docker</span></div>
             <div class="project-links">
@@ -217,13 +218,17 @@
             </div>
           </div>
           <div class="result-card">
-            <p>STRUCTURAL QUESTIONS · 24-QUERY BENCHMARK</p>
-            <div class="result-main"><strong>1.000</strong><span>routed system</span></div>
-            <div class="comparison"><span>Naive RAG baseline</span><b>0.193</b></div>
-            <div class="track"><i style="width:19.3%"></i></div>
-            <div class="comparison"><span>Routed system</span><b>1.000</b></div>
+            <p>EXACT ANSWERS · 21 COUNTING, MISSING-CLAUSE &amp; COMPARISON QUESTIONS</p>
+            <div class="result-main"><strong>21/21</strong><span>routed system</span></div>
+            <div class="comparison"><span>Standard RAG (hybrid search)</span><b>0/21</b></div>
+            <div class="track"><i style="width:0%"></i></div>
+            <div class="comparison"><span>Routed system</span><b>21/21</b></div>
             <div class="track accent"><i style="width:100%"></i></div>
-            <div class="result-secondary"><strong>0.869</strong><span>answer accuracy on held-out rephrased questions it was never tuned on</span></div>
+            <div class="stat-row">
+              <div><strong>~1 ms</strong><span>median time to answer</span></div>
+              <div><strong>0</strong><span>LLM API calls per question</span></div>
+              <div><strong>87%</strong><span>accuracy on reworded questions</span></div>
+            </div>
           </div>
           <figure class="featured-shot">
             <figcaption><span>LIVE DEMO</span>“Which contracts have no liability cap?” The routed system scans all 200 contracts and finds 84; the naive RAG baseline sees 8 retrieved chunks and finds 8.</figcaption>

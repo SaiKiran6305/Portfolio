@@ -123,3 +123,8 @@ p,li{text-wrap:pretty}
 .rag-visual>.comparison:first-of-type{margin-top:0}
 .evidence ol.ladder b{background:rgba(125,224,214,.12);color:#8ff0e3;font-size:12px}
 .rag-visual>p.sim-note{margin:22px 0 0;padding-top:16px;border-top:1px solid #35525a;color:#b9cfce;font-size:13px;font-weight:400;letter-spacing:normal;line-height:1.5}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;padding-top:24px;border-top:1px solid #34535a}
+.stat-row div{min-width:0}
+.stat-row strong{display:block;font:600 28px/1.1 'Space Grotesk',sans-serif;color:#7de0d6;white-space:nowrap}
+.stat-row span{display:block;margin-top:6px;font-size:13px;line-height:1.4;color:#c9d8d7}
+@media(max-width:500px){.stat-row{grid-template-columns:1fr;gap:16px}.stat-row div{display:flex;align-items:baseline;gap:12px}.stat-row span{margin-top:0}}
