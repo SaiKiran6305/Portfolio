@@ -134,32 +134,62 @@
         </article>
 
         <article class="rag-project reveal">
-          <div class="rag-visual" aria-label="Enterprise RAG processing architecture">
-            <p>ENTERPRISE RAG PIPELINE</p>
+          <div class="rag-visual" aria-label="Enterprise RAG document workflow">
+            <p>FROM DOCUMENT TO ANSWER</p>
             <div class="rag-flow">
-              <div class="flow-node"><span>01</span><div><small>INGEST</small><strong>Secure PDF upload</strong></div></div>
-              <div class="flow-node"><span>02</span><div><small>PROCESS</small><strong>Extract, chunk & embed</strong></div></div>
-              <div class="flow-node"><span>03</span><div><small>RETRIEVE</small><strong>pgvector + hybrid search</strong></div></div>
-              <div class="flow-node"><span>04</span><div><small>GENERATE</small><strong>Grounded answer + citations</strong></div></div>
+              <div class="flow-node"><span>01</span><div><small>UPLOAD</small><strong>Add a text-based PDF</strong></div></div>
+              <div class="flow-node"><span>02</span><div><small>INDEX</small><strong>Extract, chunk &amp; embed</strong></div></div>
+              <div class="flow-node"><span>03</span><div><small>SEARCH</small><strong>Find workspace passages</strong></div></div>
+              <div class="flow-node"><span>04</span><div><small>ANSWER</small><strong>Inspect page citations</strong></div></div>
             </div>
             <div class="rag-quality">
-              <div><strong>30–50</strong><span>evaluation questions</span></div>
-              <div><strong>6</strong><span>quality metrics</span></div>
-              <div><strong>RBAC</strong><span>retrieval-time security</span></div>
+              <div><strong>PDF</strong><span>document ingestion</span></div>
+              <div><strong>Pages</strong><span>inspectable citations</span></div>
+              <div><strong>Roles</strong><span>workspace access</span></div>
             </div>
           </div>
           <div class="project-copy rag-copy">
-            <div class="project-labels"><span>COMPLETED · END TO END</span><span>FULL-STACK AI</span></div>
+            <div class="project-labels"><span>PERSONAL PROJECT</span><span>FULL-STACK AI</span></div>
             <h3>Enterprise RAG<br>Knowledge Platform</h3>
-            <p>Built a production-oriented document intelligence platform that transforms enterprise PDFs into searchable knowledge and returns evidence-grounded answers with validated page-level citations.</p>
+            <p>Built a document question-answering workspace that turns uploaded PDFs into searchable knowledge and answers backed by inspectable page citations.</p>
+            <p class="project-impact"><strong>Impact</strong> Helps teams find answers in their documents and check the source, while keeping searches within their workspace.</p>
             <ul>
-              <li>Implemented secure document upload, PyMuPDF extraction, token-aware chunking, embeddings and PostgreSQL/pgvector storage.</li>
-              <li>Built semantic and hybrid retrieval with metadata filters, query rewriting and reranking, followed by LLM answer generation with citation validation and safe refusal behavior.</li>
-              <li>Delivered FastAPI services and a React experience for document management, conversational follow-ups, citation inspection and processing status.</li>
-              <li>Applied JWT authentication, workspaces, role-based access control during retrieval, background processing, Redis caching, rate limiting and structured observability.</li>
-              <li>Created a repeatable RAG evaluation suite covering Recall@K, Precision@K, citation accuracy, faithfulness, relevance and refusal accuracy.</li>
+              <li>Processed text-based PDFs in a background worker and indexed passages with OpenAI embeddings and PostgreSQL/pgvector.</li>
+              <li>Filtered retrieval by workspace and validated source labels before displaying an answer; unsupported questions receive a refusal.</li>
+              <li>Built React screens for document status, chat history and citations, with invitation-based team roles and a labeled evaluation runner.</li>
             </ul>
-            <div class="chip-row"><span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>pgvector</span><span>OpenAI</span><span>Redis</span><span>Docker</span></div>
+            <div class="chip-row"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span><span>Redis</span><span>OpenAI</span><span>Docker</span></div>
+            <div class="project-links"><a href="https://github.com/SaiKiran6305/enterprise-rag-platform" target="_blank" rel="noopener noreferrer" aria-label="View Enterprise RAG Knowledge Platform on GitHub">View source code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="rag-project bug-project reveal">
+          <div class="project-copy rag-copy">
+            <div class="project-labels"><span>PERSONAL PROJECT</span><span>DEVELOPER TOOLS</span></div>
+            <h3>Bug Resolution<br>Agent</h3>
+            <p>Built a developer assistant that turns a bug report or registered GitHub issue into a cited diagnosis, proposed code change and regression test.</p>
+            <p class="project-impact"><strong>Impact</strong> Gives developers one reviewable investigation with the source evidence, patch, test results and decision needed to assess a fix.</p>
+            <ul>
+              <li>Retrieved relevant code from bounded source snapshots using file names and text matches, with citations to exact source lines.</li>
+              <li>Used a bounded OpenAI proposal to generate a validated C# edit and test, then saved the diff and investigation history for review.</li>
+              <li>Added optional isolated Docker checks for the bug before and after the fix; approved, verified live investigations can open a draft PR.</li>
+            </ul>
+            <div class="chip-row"><span>React</span><span>TypeScript</span><span>ASP.NET Core</span><span>SQLite</span><span>OpenAI</span><span>Docker</span><span>GitHub</span></div>
+            <div class="project-links"><a href="https://github.com/SaiKiran6305/bug-resolution-agent" target="_blank" rel="noopener noreferrer" aria-label="View Bug Resolution Agent on GitHub">View source code ↗</a></div>
+          </div>
+          <div class="rag-visual" aria-label="Bug Resolution Agent investigation workflow">
+            <p>FROM REPORT TO REVIEW</p>
+            <div class="rag-flow">
+              <div class="flow-node"><span>01</span><div><small>INTAKE</small><strong>Report or GitHub issue</strong></div></div>
+              <div class="flow-node"><span>02</span><div><small>LOCATE</small><strong>Relevant source evidence</strong></div></div>
+              <div class="flow-node"><span>03</span><div><small>PROPOSE</small><strong>Patch &amp; regression test</strong></div></div>
+              <div class="flow-node"><span>04</span><div><small>REVIEW</small><strong>Verify locally, then decide</strong></div></div>
+            </div>
+            <div class="rag-quality">
+              <div><strong>Diff</strong><span>inspect the change</span></div>
+              <div><strong>Tests</strong><span>optional local runner</span></div>
+              <div><strong>PR</strong><span>draft after approval</span></div>
+            </div>
           </div>
         </article>
 
