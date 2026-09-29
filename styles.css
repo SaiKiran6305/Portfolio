@@ -120,3 +120,6 @@ p,li{text-wrap:pretty}
 .skill-label,.certifications>span{font-size:12px}
 .wordmark{display:inline-flex;align-items:center;min-height:44px}
 @media(max-width:500px){.impact{grid-template-columns:1fr 1fr}.impact>article{border-left:1px solid var(--line)!important}.impact article:nth-of-type(odd){border-left:0!important}.impact>div,.impact>article{padding:20px 16px}}
+.rag-visual>.comparison:first-of-type{margin-top:0}
+.evidence ol.ladder b{background:rgba(125,224,214,.12);color:#8ff0e3;font-size:12px}
+.rag-visual>p.sim-note{margin:22px 0 0;padding-top:16px;border-top:1px solid #35525a;color:#b9cfce;font-size:13px;font-weight:400;letter-spacing:normal;line-height:1.5}
